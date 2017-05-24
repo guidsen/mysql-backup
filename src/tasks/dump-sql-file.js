@@ -4,6 +4,8 @@ const streamToS3 = require('../utils/stream-to-s3');
 
 module.exports = (config) => {
   const dumpProcess = spawn('mysqldump', [
+    '--single-transaction',
+    '--quick',
     '-u', config.connection.user,
     `-p${config.connection.password}`,
     config.connection.database,
