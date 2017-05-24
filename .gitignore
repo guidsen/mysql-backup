@@ -1,0 +1,15 @@
+/node_modules
+/.idea
+/build
+.DS_Store
+.vscode/
+/npm-debug.log*
+.eslintcache
+.env*
+*.swp
+*.swo
+*.orig
+.tern-port
+.vagrant
+
+config.js
