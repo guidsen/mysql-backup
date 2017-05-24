@@ -10,6 +10,7 @@ const config = Joi.attempt(require('../config'), {
     bucket: Joi.required(),
   },
   connection: {
+    host: Joi.string().optional().default('localhost'),
     database: Joi.required(),
     user: Joi.required(),
     password: Joi.required(),

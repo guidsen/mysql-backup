@@ -6,6 +6,7 @@ module.exports = (config) => {
   const dumpProcess = spawn('mysqldump', [
     '--single-transaction',
     '--quick',
+    '-h', config.connection.host,
     '-u', config.connection.user,
     `-p${config.connection.password}`,
     config.connection.database,
