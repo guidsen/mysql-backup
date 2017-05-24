@@ -1,0 +1,27 @@
+{
+  "name": "mysql-backup",
+  "version": "0.0.1",
+  "description": "A script that creates a MySQL dump and uploads to Amazon S3.",
+  "main": "src/index.js",
+  "dependencies": {
+    "aws-sdk": "2.56.0",
+    "bluebird": "3.5.0",
+    "joi": "10.5.0",
+    "moment": "2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guidsen/mysql-backup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guidsen/mysql-backup/issues"
+  },
+  "homepage": "https://github.com/guidsen/mysql-backup#readme"
+}
